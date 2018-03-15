@@ -1,0 +1,25 @@
+* {
+    position: relative;
+    box-sizing: border-box;
+    font-family: 'Quicksand', 微軟正黑體;
+}
+html, body {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+#left {
+    width: 250px;
+    height: 100%;
+    position: fixed;
+    border: solid 1px;
+    background-color: #3f4652;
+}
+
+#right {
+    height: 100%;
+    border: solid 1px;
+    left: 250px;
+}
