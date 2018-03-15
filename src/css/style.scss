@@ -1,7 +1,7 @@
 * {
     position: relative;
     box-sizing: border-box;
-    font-family: 'Quicksand', 微軟正黑體;
+    font-family: 微軟正黑體;
 }
 html, body {
     height: 100%;
@@ -11,15 +11,71 @@ html, body {
 }
 
 #left {
-    width: 250px;
+    width: 15%;
     height: 100%;
     position: fixed;
-    border: solid 1px;
     background-color: #3f4652;
+    padding: 30px;
+
+    .header {
+        .headshot {
+            width: 130px;
+            height: 130px;
+            border: solid 1px #6c6c6c;
+            border-radius: 50%;
+            margin: 1em auto 3em auto;
+            background: linear-gradient(120deg, #f093fb 0%, #f5576c 100%);
+        }
+    }
+
+    .menu {
+        li {
+            list-style: none;
+            line-height: 2.6em;
+            font-weight: 500;
+            a {
+                color: #f7f7f7;
+                text-decoration: none;
+            }
+        }
+    }
+
 }
 
 #right {
     height: 100%;
-    border: solid 1px;
-    left: 250px;
+    left: 15%;
+    width: 85%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    h1 {
+        text-align: center;
+        margin-top: 1.5em;
+    }
+
+    h2 {
+        text-align: center;
+        font-size: 18px;
+        margin-bottom: 3em;
+    }
+
+    .paragrph {
+        width: 50%;
+        text-align: justify;
+        margin: 0 auto;
+        margin-bottom: 3em;
+    }
+    .photo_container {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: left;
+        padding: 0 3em;
+        .photo {
+            width: 239.5px;
+            height: 159.5px;
+            border: solid 1px;
+            margin: .5em;
+        }
+    }
 }
